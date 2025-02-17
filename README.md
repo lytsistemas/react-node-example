@@ -1,4 +1,4 @@
-# React Node REST
+# React Node Example
 
 Este proyecto es una aplicación que utiliza React para el frontend y Node.js para el backend, implementando una API REST.
 
