@@ -1,0 +1,85 @@
+--------------------------------------------------
+------------------ Crear el Back -----------------
+--------------------------------------------------
+
+Ejemplo básico de un servicio RESTful con Node.js que devuelve datos estáticos, como un mensaje de "Hola Mundo". 
+Utilizaremos el framework Express, que facilita la creación de APIs RESTful en Node.js.
+
+Paso 1: Crear el proyecto
+
+Primero, necesitas tener Node.js instalado en tu computadora. Si no lo tienes, puedes descargarlo desde aquí.
+
+    Crea una nueva carpeta para tu proyecto y navega hacia ella en la terminal.
+
+mkdir mi-api-rest
+cd mi-api-rest
+
+    Inicializa el proyecto con npm (esto creará un archivo package.json):
+
+npm init -y
+
+    Instala Express, que es un marco de trabajo para crear APIs RESTful en Node.js:
+
+npm install express
+
+Paso 2: Crear el archivo de servidor
+
+Ahora, crea un archivo llamado server.js en la carpeta del proyecto.
+
+touch server.js
+
+Paso 3: Escribir el código para el servicio RESTful
+
+Paso 4: Ejecutar el servidor
+
+En la terminal, ejecuta el archivo server.js utilizando Node.js:
+
+node server.js
+
+Paso 5: Probar el servicio RESTful
+
+Alternativamente, también puedes hacer la solicitud con curl desde la terminal:
+
+curl http://localhost:3001/
+
+Esto debería devolverte el mensaje "¡Hola Mundo!" como respuesta.
+
+
+--------------------------------------------------
+----------------- Crear el Front -----------------
+--------------------------------------------------
+Ejemplo básico de cómo crear una aplicación en React que haga una solicitud fetch al servicio RESTful 
+que creamos anteriormente, el cual devuelve un mensaje estático "¡Hola Mundo!".
+
+Paso 1: Crear el proyecto de React
+
+Primero, necesitas tener Node.js instalado. Si no lo tienes, puedes descargarlo desde aquí.
+
+    Crea una nueva aplicación de React usando create-react-app (si no tienes create-react-app instalado, 
+    primero instala el paquete globalmente):
+
+    npx create-react-app mi-app-react
+    cd mi-app-react
+
+    Una vez creada la aplicación, navega al directorio de la aplicación de React.
+
+Paso 2: Modificar el componente App.js
+
+Ahora, modifica el archivo App.js para que haga una solicitud fetch al servicio RESTful que creamos en Node.js.
+
+--------------------------------------------------
+---------- Ejecutar el proyecto completo ---------
+--------------------------------------------------
+
+Ejecuta el back:
+
+    node server.js
+
+Ejecuta el front:
+
+    npm start
+
+Probar la aplicación:
+
+Abre el navegador y ve a http://localhost:3000/ 
+(o el puerto en el que esté ejecutándose React). 
